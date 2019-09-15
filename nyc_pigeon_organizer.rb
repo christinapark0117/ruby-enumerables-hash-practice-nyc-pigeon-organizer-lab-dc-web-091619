@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer (data)
   final = {}
 
-  data.each do |first_level, value|
+  data.each do |pigeon_characteristics, value|
     value.each do |category, array|
       array.each do |name|
         final[name] = {:color => [], :gender => [], :lives => []}
